@@ -3,10 +3,14 @@
     <router-view></router-view>
 
     <van-tabbar route>
-      <van-tabbar-item v-for="(item,index) in tabbarData" :key="index" :to="item.to">
+      <van-tabbar-item
+        v-for="(item, index) in tabbarData"
+        :key="index"
+        :to="item.to"
+      >
         <template #icon>
           <span :class="`toutiao ${item.icon}`"></span>
-          <span>{{item.text}}</span>
+          <span>{{ item.text }}</span>
         </template>
       </van-tabbar-item>
     </van-tabbar>
