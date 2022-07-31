@@ -81,7 +81,7 @@ export default {
           data: { data: token }
         } = await login(this.mobile, this.code)
         console.log(token)
-        this.$router.push('layout')
+        this.$router.push('my')
         this.$toast.success('成功文案')
         this.$store.commit('SET_TOKEN', token)
       } catch (error) {

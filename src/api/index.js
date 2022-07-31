@@ -3,3 +3,5 @@ export * from './user'
 
 // 引入默认导出的东西在重新起名在按需导出default
 // export {default as getss} from './user'
+
+export * from './channel'
