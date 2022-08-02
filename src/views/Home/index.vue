@@ -51,6 +51,9 @@ export default {
 <style scoped lang="less">
 .navbar {
   background-color: #3296fa;
+  position: sticky;
+  top: -1px;
+  left: 0;
   :deep(.van-nav-bar__title) {
     max-width: unset;
   }
@@ -70,13 +73,14 @@ export default {
     border: 0.02667rem solid #5babfb;
   }
 }
-.van-tab__pane {
-  min-height: calc(100vh - 92px - 88px - 100px);
-}
+
 /* tabs导航条样式 */
 :deep(.van-tabs__wrap) {
   padding-right: 66px;
-
+  position: sticky;
+  top: 92px;
+  left: 0;
+  z-index: 99;
   .van-tabs__nav {
     padding-left: 0;
     padding-right: 0;
@@ -97,7 +101,12 @@ export default {
     }
   }
 }
-
+// 中间内容
+:deep(.van-tabs__content) {
+  padding-bottom: 50px;
+  max-height: calc(100vh - 92px - 88px - 100px);
+  overflow: auto;
+}
 /* 字体图标 */
 .toutiao-gengduo1 {
   position: absolute;
@@ -110,7 +119,12 @@ export default {
   text-align: center;
   opacity: 0.6;
   border-bottom: 1px solid #eee;
-
+  position: fixed;
+  top: 92px;
+  right: 0;
+  z-index: 999;
+  background: #fff;
+  opacity: 1;
   &::after {
     content: '';
     position: absolute;
