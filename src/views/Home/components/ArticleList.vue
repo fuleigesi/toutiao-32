@@ -69,9 +69,6 @@ export default {
     // 加载下一篇文章
     async loadNextPageArticle() {
       try {
-        if (Math.random() > 0.5) {
-          console.log(a)
-        }
         const { data } = await getArticleAPI(this.id, this.pre_timestamp)
         // console.log(res)
         if (this.refreshLoading) {
