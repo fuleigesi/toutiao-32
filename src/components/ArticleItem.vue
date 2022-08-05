@@ -2,7 +2,6 @@
   <van-cell
     v-if="articleInfo.cover.type === 0"
     :title="articleInfo.title"
-    value="内容"
     :label="label"
   />
 

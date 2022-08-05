@@ -15,7 +15,7 @@ requset.interceptors.request.use(
     // 在发送请求之前做些什么
     const token = store.state.tokenObj.token
     if (token) {
-      config.headers.Authorization = 'Bearer' + token
+      config.headers.Authorization = 'Bearer ' + token
     }
 
     return config

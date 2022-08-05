@@ -13,7 +13,7 @@
         offset="0"
         :immediate-check="false"
         :error.sync="iserror"
-        error-text="记载错误点击刷新"
+        error-text="加载错误点击刷新"
       >
         <article-item
           :articleInfo="item"
