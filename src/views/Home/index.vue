@@ -2,7 +2,7 @@
   <div>
     <van-nav-bar class="navbar">
       <template #title>
-        <van-button type="primary" icon="search" round class="search-btn"
+        <van-button type="primary" icon="search" @click="$router.push('/search')" round class="search-btn"
           >主要按钮</van-button
         >
       </template>
@@ -48,7 +48,7 @@ export default {
     return {
       active: 0,
       myChannel: [],
-      show: true,
+      show: false,
       islogin: this.$store.state.tokenObj.token
     }
   },

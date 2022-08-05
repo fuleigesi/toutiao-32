@@ -8,3 +8,6 @@ export * from './channel'
 
 // 获取文章新闻推荐
 export * from './news'
+
+// 搜索
+export * from './search'
