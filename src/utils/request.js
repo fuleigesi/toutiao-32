@@ -7,7 +7,7 @@ import axios from 'axios'
 
 const requset = axios.create()
 requset.defaults.baseURL = 'http://toutiao.itheima.net'
-requset.defaults.timeout = 3000
+requset.defaults.timeout = 10000
 
 // 添加请求拦截器
 requset.interceptors.request.use(

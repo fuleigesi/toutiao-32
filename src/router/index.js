@@ -34,6 +34,10 @@ const routes = [
   {
     path: '/search',
     component: () => import('@/views/Serach')
+  },
+  {
+    path: '/user',
+    component: () => import('@/views/User')
   }
 ]
 
